@@ -14,23 +14,42 @@ int main() {
     char nome_da_cidade[50];
     char carta[20];
     int populacao, pontos_turisticos;
-    float area, pib, pib_per_capita, densidade_demografica;
+    float area, pib, densidade_demografica;
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
     printf("\nsuper trunfo paises\n");
     printf("\ncadastro de cartas\n");
-printf("\nDigite o nome do estado: \n");
-scanf("%s", &estado);
-printf("codigo da carta: \n");
-scanf("%s", &carta);
-printf("nome da cidade: \n");
-scanf("%s", &nome_da_cidade);
+printf("\nDigite a sigla do estado: \n");
+scanf("%s", estado);
+printf("\ncodigo da carta: \n");
+scanf("%s", carta);
+printf("\nnome da cidade: \n");
+scanf("%s", nome_da_cidade);
+printf("\npopulacao: \n");
+scanf("%d", &populacao);
+printf("\narea: \n");
+scanf("%f", &area);
+printf("\npib: \n");  
+scanf("%f", &pib);
+printf("\npontos turisticos: \n");
+scanf("%d", &pontos_turisticos);
 
-
-    // Exibição dos Dados das Cartas:
+// Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+
+densidade_demografica = populacao / area;
+printf("\n"); 
+printf("dados registrados\n");
+printf("estado: %s\n", estado);
+printf("carta: %s\n", carta);
+printf("nome da cidade: %s\n", nome_da_cidade);
+printf("populacao: %d\n", populacao);
+printf("area: %.2f\n", area);
+printf("pib: %.2f\n", pib);
+printf("pontos turisticos: %d\n", pontos_turisticos);
+
 
     return 0;
 }
